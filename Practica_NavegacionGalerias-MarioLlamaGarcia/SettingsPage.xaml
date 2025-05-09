@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica_NavegacionGalerias_MarioLlamaGarcia.SettingsPage"
+             Title="SettingsPage">
+
+    <VerticalStackLayout Padding="20" Spacing="17">
+
+        <!--Texto-->
+        <Label Text="Configuración de la aplicación" 
+               FontSize="20" 
+               FontAttributes="Bold" />
+
+        <!--Tema Visual-->
+        
+        <!--Activador-->
+        <Switch x:Name="ThemeSwitch" 
+                Toggled="TemaVisual" />
+
+        <!--Texto-->
+        <Label Text="Tema: oscuro / claro" />
+
+        <!--Sonido-->
+
+        <!--Activador-->
+        <Switch />
+
+        <!--Texto-->
+        <Label Text="Sonido: desactivado / activado" />
+
+        <!--Notificaciones-->
+        
+        <!--Activador-->
+        <Switch />
+
+        <!--Texto-->
+        <Label Text="Notificaciones: desactivadas / activadas" />
+
+
+        <!--Bateria-->
+
+        <!--Activador-->
+        <Switch />
+
+        <!--Texto-->
+        <Label Text="Ahorro de bateria: desactivado / activado" />
+
+        <!--Versión-->
+        
+        <!--Texto-->
+        <Label x:Name="VersionLabel"
+               FontSize="12"
+               HorizontalOptions="Center"
+               TextColor="Gray"
+               Margin="0,25,0,0"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>

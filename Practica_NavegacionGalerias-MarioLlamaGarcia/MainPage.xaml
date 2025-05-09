@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica_NavegacionGalerias_MarioLlamaGarcia.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30"
+        Spacing="30">
+
+            <!--Texto-->
+            <Label
+            Text="Antiguos paquidermos"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1" />
+
+            <!--Foto-->
+            <Image 
+            Source="img_paq.png"
+            WidthRequest="350"
+            HeightRequest="350"
+            Aspect="AspectFill"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Margin="10" />
+
+            <!--Texto-->
+            <Label
+            Text="Aquí podrás encontrar varios animales pertenecientes a la antigua familia de los ''Pachydermata''. Los hayarás en la página de 'Galería', donde además vendrán con información detallada de cada criatura." 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

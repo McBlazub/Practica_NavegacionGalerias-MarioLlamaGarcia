@@ -1,0 +1,6 @@
+global using Fonts;
+global using Practica_NavegacionGalerias_MarioLlamaGarcia.Data;
+global using Practica_NavegacionGalerias_MarioLlamaGarcia.PageModels;
+global using Practica_NavegacionGalerias_MarioLlamaGarcia.Pages;
+global using Practica_NavegacionGalerias_MarioLlamaGarcia.Services;
+global using Practica_NavegacionGalerias_MarioLlamaGarcia.Utilities;

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica_NavegacionGalerias_MarioLlamaGarcia.GalleryPage"
+             Title="GalleryPage">
+
+    <ScrollView>
+        <FlexLayout 
+            x:Name="AnimalsFlexLayout"
+            Direction="Row"
+            Wrap="Wrap"
+            AlignItems="Start"
+            JustifyContent="Start"
+            Padding="10"
+            BindableLayout.ItemsSource="{Binding Animals}">
+
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    
+                    <!--Imagen-->
+                    <Frame 
+                        Padding="10" 
+                        Margin="5" 
+                        WidthRequest="160" 
+                        HasShadow="True" 
+                        CornerRadius="10">
+                        <VerticalStackLayout>
+
+                            <!--Foto-->
+                            <Image Source="{Binding Imagen}" 
+                                   HeightRequest="150" 
+                                   Aspect="AspectFill"/>
+
+                            <!--Texto-->
+                            <Label Text="{Binding Nombre}" 
+                                   FontAttributes="Bold" 
+                                   HorizontalOptions="Center" 
+                                   Margin="0,10,0,0"/>
+
+                            <!--Botón: Detalles-->
+                            <Button Text="Ver Detalles" 
+                                    CommandParameter="{Binding}" 
+                                    Clicked="OnDetailsClicked" />
+
+                        </VerticalStackLayout>
+                    </Frame>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+
+        </FlexLayout>
+    </ScrollView>
+
+</ContentPage>

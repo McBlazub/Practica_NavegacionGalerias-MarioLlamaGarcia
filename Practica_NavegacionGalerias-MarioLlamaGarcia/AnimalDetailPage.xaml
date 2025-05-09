@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica_NavegacionGalerias_MarioLlamaGarcia.AnimalDetailPage"
+             Title="AnimalDetailPage">
+
+    <VerticalStackLayout
+        Padding="20"
+        Spacing="20">
+
+        <!--Foto-->
+        <Image Source="{Binding Imagen}"
+               HeightRequest="200"
+               Aspect="AspectFill"/>
+        
+        <!--Título-->
+        <Label Text="{Binding Nombre}"
+               FontSize="24"
+               FontAttributes="Bold" />
+
+        <!--Descripción-->
+        <Label Text="{Binding Descripcion}"
+               FontSize="18" />
+        
+    </VerticalStackLayout>
+
+</ContentPage>

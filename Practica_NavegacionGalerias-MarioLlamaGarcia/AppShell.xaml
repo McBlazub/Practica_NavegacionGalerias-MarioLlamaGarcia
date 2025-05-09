@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<Shell
+    x:Class="Practica_NavegacionGalerias_MarioLlamaGarcia.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Practica_NavegacionGalerias_MarioLlamaGarcia"
+    Shell.FlyoutBehavior="Flyout"
+    Title="Practica_NavegacionGalerias_MarioLlamaGarcia">
+
+    <!--Home/Página central-->
+    <FlyoutItem 
+        Title=" Home">
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    </FlyoutItem>
+
+    <!--Galería-->
+    <FlyoutItem 
+        Title="Galería">
+        <ShellContent ContentTemplate="{DataTemplate local:GalleryPage}"
+        Icon="gallery_icon.png"
+        Route="gallery" />
+    </FlyoutItem>
+
+    
+    <!--Donde se crean las galerías personalizadas.-->
+    <!--
+    <FlyoutItem 
+        Title="Crear galerías personalizadas">
+        <ShellContent ContentTemplate="{DataTemplate local:GalleryPersonalizeCreatorPage}"
+        Icon="gallery_icon.png"
+        Route="gallery" />
+    </FlyoutItem> -->
+
+    <!--Donde se almacenan las galerías personalizadas.-->
+    <!--
+    <FlyoutItem 
+    Title="Galerías personalizadas">
+        <ShellContent ContentTemplate="{DataTemplate local:GalleryPersonalizePage}"
+        Icon="gallery_icon.png"
+        Route="gallery" />
+    </FlyoutItem> -->
+
+
+    <!--Menú de opciones-->
+    <FlyoutItem 
+        Title="Configuración" >
+        <ShellContent ContentTemplate="{DataTemplate local:SettingsPage}" 
+        Icon="settings_icon.png" 
+        Route="settings"/>
+    </FlyoutItem>
+
+</Shell>
